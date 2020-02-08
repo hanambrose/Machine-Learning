@@ -100,7 +100,7 @@ def best_spl(dataset):
     metric_obj = attr_list(Attr_dict)
     for attr in Attr_dict:
         branches = data_split(attr, dataset)
-        metric_obj[attr] =  info_gain(branches, label_values)# change method gini, IG, ME
+        metric_obj[attr] =  gini_index(branches, label_values)# change method gini, IG, ME
     best_attr = min(metric_obj, key=metric_obj.get)
     best_branches = data_split(best_attr, dataset)  
 
