@@ -1,7 +1,5 @@
 import numpy as np
 
-# constants
-
 with open('train.csv',mode='r') as f:
     myList_train=[];
     for line in f:
