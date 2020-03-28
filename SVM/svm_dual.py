@@ -91,7 +91,6 @@ def predict(wt, data):
     return error_svm(pred_seq, label)    
     
 #------------------------- main function ------------------------
-# underline at variable name end means global variable 
 K_hat_ = kernel()
 label_ = [row[-1] for row in train_data]     
 Cs = [100/873, 500/873, 700/873] 
